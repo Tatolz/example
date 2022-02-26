@@ -6,11 +6,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def search():
-    return "Hello World"
+    return render_template("main.html")
 
 @app.route("/tax")
 def test():
-    return render_template("main.html")
+    cwd = os.getcwd()
+    os.chdir(cwd)
+    return render_template("tax.html")
 
 @app.route("/result" , methods=['POST'])
 def calc():

@@ -1,24 +1,8 @@
-<html>
-    <head>
-    <title>TaxCalculator</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="/main.css" >
-    </head>
-    <body>
-    <h2>メインページ</h2>
-    <form action="/result" method="POST">        
-        <p>所得：<input type="text" name="syotoku" size="30"></p>
-        <h3>雑損控除</h3>
-        <p>損害：<input type="text" name="songai" size="30"></p>
-        <p>支出：<input type="text" name="sisyutu" size="30"></p>
-        <p>保険：<input type="text" name="hoken" size="30"></p>
-        <h3>寄付金控除</h3>
-        <p>寄付金：<input type="text" name="kifu" size="30"></p>
-        <h3>一人親控除</h3>
-        <p>子どもの所得：<input type="text" name="child" size="30"></p>
-        <h3>配偶者特別控除</h3>
-        <p>配偶者の所得：<input type="text" name="haigu" size="30"></p>
-        <p><input type="submit" value="計算"></p>
-    </form>
-    </body>
-</html>
+{%- extends "layout.html" %}
+{%- block content %}
+<main role="main" class="container">
+  <div class="starter-template">
+    <p class="lead">test</p>
+  </div>
+</main><!-- /.container -->
+{%- endblock %}
